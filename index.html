@@ -1,0 +1,58 @@
+<html>
+ <head></head>
+ <body>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>俏丽哇</title>
+  <style>
+body{background-color:black;
+  display:flex;
+  justify-content:center;
+  height:90vh;
+  align-items:center
+  }
+img{width:155px;
+  animation:muyu 1s infinite alternate;
+  }
+
+@keyframes muyu{
+  0%{transform:scale(0.01);}
+  100%{transform:scale(0.9);}
+  }
+
+p{
+  color:white;
+animation: zhaozhuofan 1s infinite;
+}
+@keyframes zhaozhuofan{
+  0%{
+    opacity:0;
+     trsnsform:translateY(0);
+     }
+  100%{
+    opacity:1;
+  transform:translateY(-20px);
+ }
+ }
+i:hover{
+  background-color:white;
+  }
+i:hover{
+  background-color:yellow;/
+  }
+  
+  
+
+</style> 
+<i><img src="木鱼.jpg"></i>
+  <p>智商-1</p>
+  <h1></h1>
+  <script>
+  //new Date
+  let a = prompt("刘哥帅不帅")
+  let h1 = document.queryselector("h1")
+  h1.innertext = a
+  
+  alert(a);
+  </script>
+ </body>
+</html>
