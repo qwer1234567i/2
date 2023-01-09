@@ -1,58 +1,27 @@
+<!DOCTYPE html>
 <html>
- <head></head>
- <body>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>俏丽哇</title>
-  <style>
-body{background-color:black;
-  display:flex;
-  justify-content:center;
-  height:90vh;
-  align-items:center
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>WebCat</title>
+</head>
+<style>
+video{
+  width:100%;
   }
-img{width:155px;
-  animation:muyu 1s infinite alternate;
-  }
+</style>
 
-@keyframes muyu{
-  0%{transform:scale(0.01);}
-  100%{transform:scale(0.9);}
-  }
+<body>
+<video src="daitu.mp4">播放</video>
+  <button onclick="a()">播放</button>
 
-p{
-  color:white;
-animation: zhaozhuofan 1s infinite;
-}
-@keyframes zhaozhuofan{
-  0%{
-    opacity:0;
-     trsnsform:translateY(0);
-     }
-  100%{
-    opacity:1;
-  transform:translateY(-20px);
- }
- }
-i:hover{
-  background-color:white;
-  }
-i:hover{
-  background-color:yellow;/
-  }
-  
-  
+<script>
 
-</style> 
-<i><img src="木鱼.jpg"></i>
-  <p>智商-1</p>
-  <h1></h1>
-  <script>
-  //new Date
-  let a = prompt("刘哥帅不帅")
-  let h1 = document.queryselector("h1")
-  h1.innertext = a
-  
-  alert(a);
-  </script>
- </body>
+let video = document.querySelector("video")
+   function a(){
+       video.play()
+       }
+</script>
+
+
+</body>
 </html>
